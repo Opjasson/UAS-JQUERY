@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="jquery.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div style="text-align: center; display: flex; flex-direction: column; width: 400px; gap: 5px; margin: auto; background-color: darkseagreen; border-radius: 10px; padding: 100px;">
+            <div style="display: flex; height: fit-content;">
+                <div style="display: flex; flex-direction: column;">
+            
+                </div>
+                <div>
+                    <button class="Hide-akun" style="width: 60px; border-radius: 5px; border: 2px solid rgb(59, 58, 58);height: fit-content;">Hide Image</button>
+                    <button class="Show-akun" style="width: 60px; border-radius: 5px; border: 2px solid rgb(59, 58, 58);height: fit-content;">Show Image</button>
+                        <ul class="akun" style="list-style: none; text-align: left;">
+                            <img src="test.png" alt="">
+                        </ul>
+                </div>
+            </div>
+              <div style="background-color: cadetblue;">
+                <h1>Ini adalah website untuk memenuhi Ujian Akhir Semester</h1>
+                <p style="border: 3px rgb(216, 89, 89) solid;"></p>
+                <button class="menu">Jadwa hari ini</button>
+                <ul class="menubaru">
+                    <li>makan di hotel australia</li>
+                    <li>joging pagi di kampung durian</li>
+                    <li>menari bersama inul daratista</li>
+                </ul>
+              </div>
+        </div>
+
+
+        <script>
+            $(document).ready(function () {
+                $("button").click(function() {
+                    $("ul.menu").toggle();
+                });
+
+                $("h1").click(function () {
+                    $("h1").css("color", "blue");
+                });
+
+                $("button.Hide-akun").click(function() {
+                    $("ul.akun").hide();
+                });
+
+                $("button.Show-akun").click(function() {
+                    $("ul.akun").show();
+                });
+
+                $("button.menu").click(function() {
+                    $("ul.menubaru").toggle();
+                });
+            });
+        </script>
+    </body>
+</html>
